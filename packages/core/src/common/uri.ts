@@ -14,8 +14,11 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
+import { setUriThrowOnMissingScheme } from 'vscode-uri';
 import Uri from 'vscode-uri';
 import { Path } from './path';
+
+setUriThrowOnMissingScheme(false);
 
 export default class URI {
 
